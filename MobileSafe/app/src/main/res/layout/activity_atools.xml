@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zhli.mobilesafe.AtoolsActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:text="高级工具"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:id="@+id/textView1"
+        android:background="#8866FF00"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="号码归属地查询"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:gravity="center_vertical"
+        android:onClick="numberQuery"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="短信备份"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:gravity="center_vertical"
+        android:onClick="smsBackup"
+        android:clickable="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="短信还原"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:drawableLeft="@android:drawable/ic_menu_camera"
+        android:gravity="center_vertical"
+        android:onClick="smsRestore"
+        android:clickable="true"/>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zhli.sender" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".Level1Receiver">
+            <intent-filter android:priority="1000">
+                <action android:name="com.example.zhli.sender.songwennuan"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".Level2Receiver">
+            <intent-filter android:priority="100">
+                <action android:name="com.example.zhli.sender.songwennuan"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".Level3Receiver">
+            <intent-filter android:priority="10">
+                <action android:name="com.example.zhli.sender.songwennuan"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".FinalReceiver">
+            <intent-filter android:priority="-1000">
+                <action android:name="com.example.zhli.sender.songwennuan"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

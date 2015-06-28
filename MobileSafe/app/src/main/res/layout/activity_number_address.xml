@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zhli.mobilesafe.NumberAddressActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:text="号码归属地查询"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:id="@+id/textView1"
+        android:background="#8866FF00"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/et_phone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询"
+        android:onClick="numberAddressQuery" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="显示归属地结果"
+        android:id="@+id/result" />
+
+</LinearLayout>

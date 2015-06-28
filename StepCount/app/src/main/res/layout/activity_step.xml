@@ -1,0 +1,35 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zhli.stepcount.StepActivity">
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="counter" />
+
+
+    <TextView
+        android:id="@+id/counter_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textColor="#999999" />
+
+    <TextView
+        android:id="@+id/detector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="detector" />
+
+    <TextView
+        android:id="@+id/detector_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="decetor"
+        android:textColor="#999999" />
+</LinearLayout>

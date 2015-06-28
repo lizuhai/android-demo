@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhli.mobilesafe.HomeActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:text="功能列表"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:id="@+id/tv_"
+        android:background="#8866FF00"/>
+
+    <!--自定义可以滚动的TextView，实现广告效果
+    android:ellipsize="start"开始处省略, marquee 以跑马灯形式显示-->
+    <com.example.zhli.mobilesafe.ui.FocusedView
+        android:text="最新的 APP，立刻下载，即刻拥有，only you 值得拥有"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--九宫格布局-->
+    <GridView
+        android:layout_marginTop="15dip"
+        android:verticalSpacing="15dip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_home"
+        android:numColumns="3">
+
+    </GridView>
+
+</LinearLayout>

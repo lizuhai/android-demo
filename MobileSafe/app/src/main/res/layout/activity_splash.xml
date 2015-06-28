@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/luncher_bg"
+    tools:context=".SplashActivity"
+    android:id="@+id/rl_root_splish">
+
+    <TextView android:text="版本:2.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:layout_centerInParent="true"
+        android:shadowColor="#FF0000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:id="@+id/tv_splash_version"/>
+
+    <ProgressBar
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_splash_version"
+        android:layout_centerHorizontal="true"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tv_update_info"/>
+
+</RelativeLayout>

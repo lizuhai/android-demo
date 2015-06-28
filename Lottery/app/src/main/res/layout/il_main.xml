@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    界面分为三部分，标题3中变化，底部2中变化
+    <include
+        layout="@layout/il_title"
+        android:id="@+id/ii_title"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:id="@+id/ii_middle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ii_bottom"
+        android:layout_below="@+id/ii_title">
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/il_bottom"
+        android:id="@+id/ii_bottom"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

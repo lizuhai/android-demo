@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip">
+
+    <com.loopj.android.image.SmartImageView
+        android:layout_width="100dip"
+        android:layout_height="60dip"
+        android:id="@+id/siv_listview_item_icon"
+        android:src="@drawable/a"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/siv_listview_item_icon"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:text="3Q大战宣判: 腾讯获赔500万"
+        android:layout_marginTop="3dip"
+        android:id="@+id/siv_listview_item_title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:textColor="@android:color/darker_gray"
+        android:text="最高法驳回360上诉, 维持一审宣判."
+        android:layout_below="@+id/siv_listview_item_title"
+        android:layout_alignLeft="@+id/siv_listview_item_title"
+        android:layout_marginTop="3dip"
+        android:id="@+id/siv_listview_item_detail"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#FF00"
+        android:text="跟帖(668)"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/siv_listview_item_comment"/>
+</RelativeLayout>

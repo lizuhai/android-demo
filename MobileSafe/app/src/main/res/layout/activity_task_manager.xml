@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zhli.mobilesafe.TaskManagerActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:text="进程管理"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:id="@+id/textView1"
+        android:background="#8866FF00"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_process_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运行中的进程:"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tv_memory_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余/总内存:"
+            android:textColor="#000000"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_weight="100"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_loading"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="正在玩命加载中..."/>
+        </LinearLayout>
+
+        <!--overScrollMode="never"不要过渡滚动-->
+        <ListView
+            android:overScrollMode="never"
+            android:fastScrollEnabled="true"
+            android:id="@+id/lv_task_manager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+        <TextView
+            android:id="@+id/tv_stauts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="用户进程（...）个"
+            android:textColor="#ffffff"
+            android:background="#ff888888"/><!--Gray-->
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:onClick="selectAll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="全选"/>
+        <Button
+            android:onClick="selectOppo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="反选"/>
+        <Button
+            android:onClick="killAll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="清理"/>
+        <Button
+            android:onClick="enterSetting"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="设置"/>
+    </LinearLayout>
+</LinearLayout>

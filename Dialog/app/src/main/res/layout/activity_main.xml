@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:text="ok/cancle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click1"/>
+
+    <Button
+        android:text="select one"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click2"/>
+
+    <Button
+        android:text="checkbox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click3"/>
+
+    <Button
+        android:text="进度条对话框"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click4"/>
+
+    <Button
+        android:text="带进度的进度条对话框"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click5"/>
+
+
+</LinearLayout>
